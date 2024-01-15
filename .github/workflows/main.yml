@@ -1,1 +1,24 @@
-
+name: POEC Worflow
+on:
+    push:
+        branches: [main]
+jobs:
+    buildApp:
+        runs-on: ubuntu-latest
+        steps:
+            - name : installation NodeJs
+              run :
+                    echo "Installing NodeJs" >> file.txt
+            - name : installation Angular
+              run :
+                    echo "Installing Angular" >> file.txt
+            - name : telechargement des dépendances
+              run :
+                    echo "telecharger des dependances" >> file.txt
+            - name : Construction de la solution
+              run :
+                      echo "build" >> file.txt
+          
+      
+      
+      
